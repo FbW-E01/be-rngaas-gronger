@@ -9,7 +9,6 @@ import http from 'http';
 // server.listen(8081);
 
 function requestHandler(request, response) {
-    console.log("request received...m aking random number :D");
     const randomNumber = Math.random();
     response.end(randomNumber.toString());
 }
@@ -17,8 +16,5 @@ function requestHandler(request, response) {
 const myServer = http.createServer(requestHandler);
 
 myServer.listen(8081);
-
-
-
 
 
